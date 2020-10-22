@@ -1,4 +1,4 @@
-map, select, collect, inject, detect và each trong Ruby
+Enumerable: map, select, collect, inject, detect và each trong Ruby
 
 1.Map và collect cơ bản là giống nhau(là 1)
   map sẽ duyệt toàn bộ mảng và trả về 1 mảng kết quả, nhưng mảng ban đầu không bị thay đổi
@@ -64,3 +64,11 @@ map, select, collect, inject, detect và each trong Ruby
     #would return {a:1, c:3}
     Vì sao có sự khác biệt? Đó là do select đã được định nghĩa lại trong lớp Hash còn find_all thì không     
 
+##### tong ket#####
+  sử dụng select hoặc reject nếu bạn muốn chọn ra hoặc loại đi những giá trị của mảng theo một điều kiện nào đó
+  sử dụng collect nếu bạn muốn tạo một mảng dựa trên kết quả trả về từ logic trong block
+  sử dụng inject nếu bạn muốn tích trữ, lấy tổng hoặc nối các giá trị mảng lại với nhau
+  sử dụng detect nếu bạn muốn tìm một phần tử trong mảng
+  ## tham khao##
+  https://www.phongvanit.com/cau-hoi/phan-biet-map-select-collect-reject-detect-each-in-100630
+  https://ruby-doc.org/core-2.7.2/Enumerable.html
